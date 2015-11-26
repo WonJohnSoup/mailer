@@ -56,4 +56,8 @@ end
 gem 'mail_form'
 gem 'simple_form'
 
+group :development, :test do
+gem 'foreman'
+end
+
 gem 'rails_12factor', group: :production
