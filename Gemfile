@@ -55,3 +55,5 @@ end
 
 gem 'mail_form'
 gem 'simple_form'
+
+gem 'rails_12factor', group: :production
