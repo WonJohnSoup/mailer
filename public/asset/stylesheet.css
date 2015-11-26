@@ -370,7 +370,8 @@ button.lora{
 	}
 
 	video#bg-vid{
-		width: 1200px;
+		/*width: 1200px;*/
+		width: 100%;
 	}
 
 	#portfolio-list-header{;
