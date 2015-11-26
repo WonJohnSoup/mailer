@@ -1,0 +1,397 @@
+.content{
+	max-width: 100%;
+	margin-bottom: 420px;
+	background-color: white;
+}
+
+.clear{
+	background: transparent;
+	outline: transparent;
+	border: none;
+}
+
+#hero{
+	width: auto;
+	height: 600px;
+	background: url("profile15largeB.jpg") no-repeat;
+	background-size: cover;
+	background-position: 10% 25%;
+}
+
+#color-layer{
+	width: 100%;
+	height: 600px;
+	background-color: rgba(50,120,110,0.3);
+	opacity: 0.65;
+}
+
+#banner-quote{
+	text-align: center;
+	opacity: 1.0;
+	padding: 0px;
+	margin: 0px;
+	padding-top: 100px;
+}
+
+.quickSand{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 350%;
+	color: white;
+	opacity: 1.0;
+	text-transform: uppercase;
+}
+
+.banner-p{
+	color: white;
+	font-family: 'Josefin Slab', serif;
+	text-align: center;
+	font-size: 125%;
+}
+
+#navBrand{
+	color: white;
+	font-family: 'Josefin Slab', serif;
+	margin-top: -5px;
+}
+
+.navbar-inverse {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-inverse-dark {
+	background: -webkit-linear-gradient(#535353, transparent);
+    background: -o-linear-gradient(#535353, transparent);
+    background: -moz-linear-gradient(#535353, transparent);
+    background: linear-gradient(#535353, transparent);
+    opacity: 0.7;
+    padding-bottom: 10px;
+    transition: all 0.9s ease;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+    font-family: 'Josefin Slab', serif;
+}
+
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:hover, 
+.navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: transparent;
+    color: #555555;
+    font-family: 'Josefin Slab', serif;
+}
+
+
+
+#hireBtn{
+	padding: 15px 50px;
+	margin-top: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 200%;
+	font-weight: bold;
+	color: black;
+	border-color: black;
+	background-color: transparent;
+    -webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+
+	#hireBtn:hover { 
+	    background-color: black;
+	    color: white;
+	    transform: scale(1.1);
+	}
+
+#hireBtn, .hire-col{
+	text-align: center;
+}
+
+.btn-success:hover {
+	border-color: #8b7684;
+	background-color: transparent;
+}
+
+.body-icons{
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	margin-top: 50px;
+}
+
+	.body-icons > p{
+		font-family: 'Lora', serif;
+	}
+
+		.body-icons > p.top-orange-border{
+			margin-top: 10px;
+			padding-top: 10px;
+			border-top: 5px solid #7e730f;
+		}
+
+#bg-vid-holder{
+	margin-top: 50px;
+	min-height: 720px;
+}
+
+video#bg-vid{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	/*z-index: -1;*/
+	/*background: url("robotdreams2.jpg") no-repeat;*/
+	/*background-size: cover;*/
+}
+
+/*#kid-banner{
+	width: 100%;
+	height: 600px;
+	background: url("kid-banner.png") no-repeat;
+	background-size: cover;
+	margin-top: 20px;
+	padding: 0px;
+}*/
+
+	h1.kid-banner-text{
+		font-family: 'Merriweather', serif;
+		font-family: 'Quicksand', sans-serif;
+		font-size: 450%;
+		text-align: right;
+		margin-right: 50px;
+		margin-top: 80px;
+		color: #99822b;
+		opacity: 0.9;
+	}
+
+	p.kid-banner-text{
+		color: black;
+		font-family: 'Quicksand', sans-serif;
+		font-family: 'Merriweather', serif;
+		font-size: 175%;
+		text-align: right;
+		line-height: 200%;
+		letter-spacing: 3px;
+		margin-right: 50px;
+		margin-top: 50px;
+		opacity: 0.9;
+	}
+
+	a.kid-banner-text {
+		text-transform: uppercase;
+		font-family: 'Quicksand', sans-serif;
+		font-size: 150%;
+		float: right;
+		margin-top: 30px;
+		margin-right: 55px;
+		padding: 10px 25px 10px 25px;
+	}
+
+
+#portfolio-list-header{
+	font-family: 'Quicksand', sans-serif;
+	margin-top: 65px;
+	text-align: center;
+}
+
+#portfolio-list{
+	margin-top: 20px;
+}
+
+	#portfolio-list img{
+		opacity: 0.8;
+		transform: scale(1.12);
+		transition: all 0.3s ease 0s;
+	}
+
+	#portfolio-list img:hover{
+		opacity: 1;
+		transform: scale(1.05);
+	}
+
+	.thumbnail{
+		overflow: hidden;
+		outline: none;
+	}
+
+.not-showing{
+	opacity: 0;
+	position: relative;
+	transform: translate(-30px, 0px);
+	transition: all 0.5s ease-in-out;
+}
+
+.not-showing-b{
+	opacity: 0;
+	position: relative;
+	transform: translate(30px, 30px);
+	transition: all 0.5s ease-in-out;
+}
+
+	.is-showing{
+		opacity: 1;
+		transform: translate(0px, 0px);
+	}
+
+.border-row{
+	height: 8px;
+	background: radial-gradient(ellipse at center, 
+				rgba(0,0,0,0.3) 5%, 
+				rgba(0,0,0,0) 50%);
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+.panel-title{
+	font-family: 'Lora', sans-serif;
+	font-size: 225%;
+	font-weight: bold;
+}
+
+.panel-body{
+	/*font-family: 'Josefin Slab', serif;*/
+	/*font-family: 'Merriweather', serif;*/
+	font-family: 'Lora', sans-serif;
+	/*font-family: 'Quicksand', sans-serif;*/
+	/*font-weight: bold;*/
+	font-size: 125%;
+	margin: 10px;
+}
+
+#touch{
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+img.headshot{
+    display: block;
+    margin: 0 auto;
+}
+
+label.lora{
+	font-family: 'Lora', sans-serif;
+}
+
+button.lora{
+	font-family: 'Lora', sans-serif;
+	margin-bottom: 50px;
+}
+
+.navbar-default{
+	background-color: #5C5C5C;
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+	height: 300px;
+	max-width: 100%;
+	padding-top: 70px;
+	text-align: center;
+	position: fixed;
+	margin: 0px auto;
+	z-index: -2;
+}
+
+	.navbar-default img{
+		margin: 0px 8px;
+	}
+
+	.navbar-default p{
+		margin-top: 60px;
+	}
+
+	.navbar-default h6{
+		text-align: right;
+		margin-top: 85px;
+		margin-right: 30px;
+	}
+
+	.navbar-default a{
+		color: #59D6FF;
+	}
+
+		.navbar-default a:hover{
+			text-decoration: none;
+		}
+
+	.color-block{
+		height: 120px;
+		background-color: black;
+		max-width: 100%;
+	}
+
+/*media query*/
+@media (max-width: 650px){
+	#hero{
+		background-position: center;
+	}
+
+    #banner-quote{
+		font-size: 250%;
+		padding-top: 325px;
+	}
+
+	.navbar-inverse-dark{
+	    padding-bottom: 60px;
+	}
+
+    #hireBtn{
+	  	margin-top: 50px;
+	  	color: black;
+	  	padding: 5px 25px 5px 25px;
+	}
+
+		#hireBtn:hover{
+			color: white;
+			transform: scale(1.05);
+		}
+
+	.body-icons{
+		margin-top: 20px;
+	}
+
+	h1.kid-banner-text{
+		margin-right: 0px;
+		font-size: 275%;
+		font-weight: bold;
+	}
+
+	p.kid-banner-text{
+		font-size: 100%;
+		margin-left: 50px;
+		margin-right: 0px;
+		margin-top: 30px;
+	}
+
+	a.kid-banner-text{
+		margin-right: 0px;
+	}
+
+	video#bg-vid{
+		width: 1200px;
+	}
+
+	#portfolio-list-header{;
+		margin-top: 85px;
+		margin-bottom: -15px;
+	}
+
+	#portfolio-list a{
+		margin-top: 0px;
+	}
+
+	.panel-title{
+		font-size: 200%;
+	}
+
+	#touch{
+		margin-top: -50px;
+	}
+
+	img.headshot{
+		margin-bottom: 30px;
+	}
+
+}

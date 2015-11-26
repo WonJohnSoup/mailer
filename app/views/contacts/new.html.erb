@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Second Mock Up</title>
+	<link rel="shortcut icon" href="asset/wushu_Eie_icon.ico">
+	<link href='https://fonts.googleapis.com/css?family=Quicksand:300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Slab:300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lora:400' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="library/bootstrap.css">
+	<link rel="stylesheet" href="asset/stylesheet.css" type="text/css">
+	<script src="library/jquery-1.11.3.min.js"></script>
+	<script src="library/functions.js"></script>
+	<script>
+	$(document).ready(function(){
+
+		$(window).scroll(function(){
+
+			var positionTop = $(window).scrollTop();
+
+			//fade in background-color to menu on scrolldown
+		    if (positionTop > 350) {
+		        $('.navbar-inverse').addClass('navbar-inverse-dark');
+		    } else {
+		        $('.navbar-inverse').removeClass('navbar-inverse-dark');
+		    }
+
+		    // hireBtn scroll to email form on click
+		    $("#hireBtn").click(function() {
+			    $('html, body').animate({
+			    	scrollTop: $("#touch").offset().top - 65
+			    }, 800);
+			});
+
+		    //parallax on project descriptions
+		    if(positionTop > $('.border-row').offset().top - ($(window).height() / 1.35)) {
+		    	$('.not-showing').each(function(i){
+		    		setTimeout(function(){
+			    		$('.not-showing').eq(i).addClass('is-showing');
+		    		}, 100 * (i + 1));
+		    	});
+		    }
+
+		    if(positionTop > $('.border-row').offset().top - ($(window).height() / 1.35)) {
+		    	$('.not-showing-b').each(function(i){
+		    		setTimeout(function(){
+			    		$('.not-showing-b').eq(i).addClass('is-showing');
+		    		}, 100 * (i + 1));
+		    	});
+		    }
+
+		});
+
+	})
+	</script>
+</head>
+<body>
+<div class="content">
+	<!-- navbar -->
+	<div class="clear navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle Navgiation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a id="navBrand" class="navbar-brand" href="#"><img src="asset/apple77.png" alt="no image"></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right pull-right">
+					<li ><a href="#">My Mission</a></li>
+					<li><a href="#">My Brief</a></li>
+					<li class="dropdown pull-right">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">My Skills<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li class="dropdown-header">Admin & Dashboard</li>
+							<li><a href="#">Admin 1</a></li>
+							<li><a href="#">Admin 2</a></li>
+							<li class="dropdown-header">Admin & Dashboard</li>
+							<li><a href="#">Admin 1</a></li>
+							<li><a href="#">Admin 2</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- splash image -->
+	<div id="hero">
+		<div id="color-layer">
+			<h1 id="banner-quote" class="quickSand">Front end web solutions.</h1>
+			<p class="banner-p hidden-xs">Hello, I&#39;m John and I want a job with you. Hire hire hire.</p>
+		</div>
+	</div>
+	
+	<!-- call to action -->
+		<div class="col-xs-12 hire-col">
+			<button id="hireBtn" class="btn btn-success" >Get in Touch</button>
+		</div>
+
+	<!-- skills list -->
+	<div id="top" class="container">
+		<div class="row">
+			<div class="hidden-xs col-sm-2"></div>
+			<div class="col-xs-12 col-sm-3 body-icons">
+				<h3>Front End</h3>
+				<img src="asset/website8.png" alt="no image">
+				<p class="top-orange-border">HTML5 / CSS3</p>
+				<p>Responsive Design</p>
+				<p>Javascript</p>
+				<p>jQuery</p>
+				<p>AngularJS</p>
+				<p>Ajax / Single Page Application</p>
+				<p>Boostrap + SASS / LESS</p>
+			</div>
+			<div class="hidden-xs col-sm-2"></div>
+			<div class="col-xs-12 col-sm-3 body-icons">
+				<h3>Back End</h3>
+				<img src="asset/kitchen148.png" alt="no image">
+				<p class="top-orange-border parallax-trigger">Ruby on Rails</p>
+				<p>LAMP - Apache / MySQL / PHP</p>
+				<p>MEAN - MongoDB / Express / Node.js</p>
+				<p>Socket.io</p>
+				<p>API</p>
+				<p>MVC Frameworks</p>
+				<p>Object Oriented Programming</p>
+			</div>
+			<div class="hidden-xs col-sm-2"></div>
+		</div>
+	</div>
+
+	<!-- portfolio -->
+	<h2 id="portfolio-list-header">My Projects</h2>
+	<div id="portfolio-list" class="container">
+
+		<!-- first project -->
+		<div class="border-row"></div>
+		<div class="row portfolio-row">
+			<div class="col-xs-12 col-sm-5 col-sm-push-7">
+				<a class="thumbnail not-showing-b" href="#"><img src="asset/adamkim3.jpg" alt="no image"></a>
+			</div>
+			<div class="col-xs-12 col-sm-7 col-sm-pull-5 panel-group">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title not-showing">Adam & Kim</h3>
+					</div>
+					<div class="panel-body">	
+						<p class="not-showing">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum tellus eu sem vestibulum pretium. Nam sed neque faucibus, volutpat massa sed, sodales ipsum. Cras vitae purus in purus fringilla tincidunt. Donec non erat dignissim, elementum erat eget, sagittis neque.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- second project -->
+		<div class="border-row"></div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-5">
+				<a class="thumbnail not-showing-b" href="#"><img src="asset/neonoir.jpg" alt="no image"></a>
+			</div>
+			<div class="col-xs-12 col-sm-7 panel-group">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title not-showing">Indie Action Tutorials</h3>
+					</div>
+					<div class="panel-body">	
+						<p class="not-showing">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum tellus eu sem vestibulum pretium. Nam sed neque faucibus, volutpat massa sed, sodales ipsum. Cras vitae purus in purus fringilla tincidunt. Donec non erat dignissim, elementum erat eget, sagittis neque.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- third project -->
+		<div class="border-row"></div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-5 col-sm-push-7">
+				<a class="thumbnail not-showing-b" href="#"><img src="asset/robotdreams5.jpg" alt="no image"></a>
+			</div>
+			<div class="col-xs-12 col-sm-7 col-sm-pull-5 panel-group">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title not-showing">Robot Dreams</h3>
+					</div>
+					<div class="panel-body not-showing">	
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum tellus eu sem vestibulum pretium. Nam sed neque faucibus, volutpat massa sed, sodales ipsum. Cras vitae purus in purus fringilla tincidunt. Donec non erat dignissim, elementum erat eget, sagittis neque.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- kid-banner -->
+<!-- 	<div id="kid-banner" >
+		<div class="hidden-xs hidden-sm col-md-5"></div>
+		<div class="col-xs-12 cold-sm-12 col-md-7">
+			<h1 class="kid-banner-text">mystory.min</h1>
+			<p class="kid-banner-text">Front end developer; Martial artist; Pharmacist; Wedding photographer; Actor extraordinaire. Click to find out more.</p>
+			<a class="kid-banner-text btn btn-default"href="#">Read my story</a>
+		</div>
+	</div> -->
+
+	<!-- video banner -->
+	<div id="bg-vid-holder">
+		<video id="bg-vid" autoplay loop poster="asset/robotdreams2.jpg">
+			<source src="asset/robotdreamsb.webm" type="video/webm" />
+		</video>
+		<div class="hidden-xs hidden-sm col-md-6"></div>
+		<div class="col-xs-12 cold-sm-12 col-md-6">
+			<h1 class="kid-banner-text">mystory.min</h1>
+			<p class="kid-banner-text">Front end developer; Film-maker; Martial artist; Pharmacist; Wedding photographer; Actor extraordinaire. Click to find out more.</p>
+			<a class="kid-banner-text btn btn-default"href="testlink.html">Read my story</a>
+		</div>
+	</div>
+	
+	<!-- contact form -->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1 id="touch">Let&#39;s get in touch!</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-md-6">
+				<img class="headshot img-circle" src="asset/john9square.jpg" alt="headshot">
+			</div>
+			<div class="col-xs-12 col-md-6">
+				<form role="form">
+					<div class="form-group">
+					    <label class="lora" for="text" >Your Name:</label>
+					    <input type="text" class="form-control" id="name">
+				    </div>
+					<div class="form-group">
+					    <label class="lora" for="email" pattern=".{0}|.{2,}"   required title="Either 0 OR (2 chars minimum)">Your Email address:</label>
+					    <input type="email" class="form-control" id="email">
+				    </div>
+					<div class="form-group">
+					    <label class="lora" for="message">Your Message:</label>
+					    <textarea class="form-control" rows="5"> 
+						</textarea>
+					</div>
+				    <button type="submit" class="btn btn-primary lora">SEND!</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<!-- footer -->
+	<div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+		<div class="row">
+			<div class="col-xs-12">
+				<a href="#"><img src="asset/socialmedia10.png" alt=""></a>
+				<a href="#"><img src="asset/github17.png" alt=""></a>
+				<a href="#"><img src="asset/logotype46.png" alt=""></a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<p>&copy; John Nguyen 2015 - Los Angeles, CA - <a href="#">wonjohnsoup@gmail.com</a></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 color-block">
+				<h6>Coded & Designed by John Nguyen</h6>
+			</div>
+		</div>
+	</div>
+
+
+<div align="center">
+  <h3>Send A message to Us</h3>
+
+  <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+    <%= f.input :name, :required => true %>
+    <%= f.input :email, :required => true %>
+    <%= f.input :message, :as => :text, :required => true %>
+    <div class= "hidden">
+      <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+    </div>
+    <div>
+      </br>
+      <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+    </div>
+  <% end %>
+</div>
+
+	<script src="library/bootstrap.js"></script>
+</body>
+</html>
