@@ -29,7 +29,7 @@
 
 		    // hireBtn scroll to email form on click
 		    $("#hireBtn").click(function() {
-			    $('html, body').animate({
+			    $('html, body').stop().animate({
 			    	scrollTop: $("#touch").offset().top - 65
 			    }, 800);
 			});
