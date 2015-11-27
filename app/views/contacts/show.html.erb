@@ -14,11 +14,51 @@
 	<script src="../asset/jquery-1.11.3.min.js"></script>
 	<script src="../asset/functions.js"></script>
 	<script>
+	$(document).ready(function(){
 
 
+		$(window).scroll(function(){
+
+			var scrollPos = $(this).scrollTop();
+			
+			// parallax
+			$('#color-banner-quote').css({
+				'transform' : 'translate(0px, '+ scrollPos /1.1 +'%)'
+			});
+
+			$('#color-banner-eyes').css({
+				'transform' : 'translate(0px, '+ scrollPos /10 +'%)'
+			});
+
+			$('#color-banner-bg-reflection').css({
+				'transform' : 'translate(0px, '+ scrollPos /1.4 +'%)'
+			});
+
+			$('#color-banner-bg-reflection-2').css({
+				'transform' : 'translate(0px, '+ scrollPos /1.4 +'%)'
+			});
+
+			// scroll-fade in banner quote
+			if(scrollPos > $('#color-banner').offset().top - 300){
+				var opacity = (scrollPos - $('#color-banner').offset().top) / (scrollPos/1.8)
+				$('#color-banner-quote').css({'opacity' : opacity})
+			}
+
+			// scroll-fade out code
+			if(scrollPos > $('#color-banner').offset().top - 300){
+				var opacity = (scrollPos - $('#color-banner').offset().top) / (scrollPos/1.8)
+				$('#color-banner-inner').css({'opacity' : (1 - opacity)})
+			}
+
+			if(scrollPos > $('#color-banner').offset().top - 300){
+				var opacity = (scrollPos - $('#color-banner').offset().top) / (scrollPos/1.8)
+				$('#color-banner-burst-green').css({'opacity' : opacity})
+			}
+
+		});
 
 
-
+	})
 
 	</script>
 </head>
@@ -67,46 +107,4 @@
 	</header>
 	
 </body>
-<script>
-			$(window).scroll(function(){
-
-			var scrollPos = $(this).scrollTop();
-			
-			// parallax
-			$('#color-banner-quote').css({
-				'transform' : 'translate(0px, '+ scrollPos /1.1 +'%)'
-			});
-
-			$('#color-banner-eyes').css({
-				'transform' : 'translate(0px, '+ scrollPos /10 +'%)'
-			});
-
-			$('#color-banner-bg-reflection').css({
-				'transform' : 'translate(0px, '+ scrollPos /1.4 +'%)'
-			});
-
-			$('#color-banner-bg-reflection-2').css({
-				'transform' : 'translate(0px, '+ scrollPos /1.4 +'%)'
-			});
-
-			// scroll-fade in banner quote
-			if(scrollPos > $('#color-banner').offset().top - 300){
-				var opacity = (scrollPos - $('#color-banner').offset().top) / (scrollPos/1.8)
-				$('#color-banner-quote').css({'opacity' : opacity})
-			}
-
-			// scroll-fade out code
-			if(scrollPos > $('#color-banner').offset().top - 300){
-				var opacity = (scrollPos - $('#color-banner').offset().top) / (scrollPos/1.8)
-				$('#color-banner-inner').css({'opacity' : (1 - opacity)})
-			}
-
-			if(scrollPos > $('#color-banner').offset().top - 300){
-				var opacity = (scrollPos - $('#color-banner').offset().top) / (scrollPos/1.8)
-				$('#color-banner-burst-green').css({'opacity' : opacity})
-			}
-
-
-		});
-</script>
 </html>
