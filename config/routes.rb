@@ -7,6 +7,7 @@ resources "contacts", only: [:new, :create]
 
   # You can have the root of your site routed with "root"
   root 'contacts#new'
+  get 'contacts/show' => 'contacts#show'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

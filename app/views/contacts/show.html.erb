@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>My Brief</title>
+	<link rel="shortcut icon" href="asset/wushu_Eie_icon.ico">
+	<link href='https://fonts.googleapis.com/css?family=Quicksand:300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Slab:300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lora:400' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="library/bootstrap.min.css">
+	<link rel="stylesheet" href="asset/stylesheet-brief.css" type="text/css">
+	<script src="library/jquery-1.11.3.min.js"></script>
+	<script>
+	$(document).ready(function(){
+
+
+		$(window).scroll(function(){
+
+			var scrollPos = $(this).scrollTop();
+			
+			// parallax
+			$('#color-banner-quote').css({
+				'transform' : 'translate(0px, '+ scrollPos /1.1 +'%)'
+			});
+
+			$('#color-banner-eyes').css({
+				'transform' : 'translate(0px, '+ scrollPos /10 +'%)'
+			});
+
+			$('#color-banner-bg-reflection').css({
+				'transform' : 'translate(0px, '+ scrollPos /1.4 +'%)'
+			});
+
+			$('#color-banner-bg-reflection-2').css({
+				'transform' : 'translate(0px, '+ scrollPos /1.4 +'%)'
+			});
+
+			// scroll-fade in banner quote
+			if(scrollPos > $('#color-banner').offset().top - 300){
+				var opacity = (scrollPos - $('#color-banner').offset().top) / (scrollPos/1.8)
+				$('#color-banner-quote').css({'opacity' : opacity})
+			}
+
+			// scroll-fade out code
+			if(scrollPos > $('#color-banner').offset().top - 300){
+				var opacity = (scrollPos - $('#color-banner').offset().top) / (scrollPos/1.8)
+				$('#color-banner-inner').css({'opacity' : (1 - opacity)})
+			}
+
+			if(scrollPos > $('#color-banner').offset().top - 300){
+				var opacity = (scrollPos - $('#color-banner').offset().top) / (scrollPos/1.8)
+				$('#color-banner-burst-green').css({'opacity' : opacity})
+			}
+
+
+		});
+
+
+
+
+
+
+	})
+
+	</script>
+</head>
+<body>
+		<!-- navbar -->
+	<div class="clear navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle Navgiation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a id="navBrand" class="navbar-brand" href="#"><img src="asset/apple77.png" alt="no image"></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right pull-right">
+					<li ><a href="#">My Mission</a></li>
+					<li><a href="#">My Brief</a></li>
+					<li class="dropdown pull-right">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">My Skills<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li class="dropdown-header">Admin & Dashboard</li>
+							<li><a href="#">Admin 1</a></li>
+							<li><a href="#">Admin 2</a></li>
+							<li class="dropdown-header">Admin & Dashboard</li>
+							<li><a href="#">Admin 1</a></li>
+							<li><a href="#">Admin 2</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- splash image -->
+	<header id="color-banner">
+		<div id="color-banner-inner"></div>
+		<div id="color-banner-eyes"></div>
+		<!-- <div id="color-banner-burst-yellow"></div> -->
+		<div id="color-banner-burst-green"></div>
+		<div id="color-banner-quote"></div>
+		<div id="color-banner-bg-reflection"></div>
+		<div id="color-banner-bg-reflection-2"></div>
+	</header>
+	
+</body>
+</html>

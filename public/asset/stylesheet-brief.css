@@ -1,0 +1,116 @@
+body{
+	height: 1000px;
+}
+
+.navbar-inverse {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-inverse-dark {
+	background: -webkit-linear-gradient(#535353, transparent);
+    background: -o-linear-gradient(#535353, transparent);
+    background: -moz-linear-gradient(#535353, transparent);
+    background: linear-gradient(#535353, transparent);
+    opacity: 0.7;
+    padding-bottom: 10px;
+    transition: all 0.9s ease;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+    font-family: 'Josefin Slab', serif;
+}
+
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:hover, 
+.navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: transparent;
+    color: #555555;
+    font-family: 'Josefin Slab', serif;
+}
+
+#color-banner{
+	margin-top: 150px;
+	position: relative;
+	height: 500px;
+	/*background: url('color-banner-bg.png') no-repeat;*/
+	background-size: cover;
+	background-position: right 0px;
+	/*background-attachment: fixed;*/
+	overflow: hidden;
+}
+
+	#color-banner-inner{
+		height: 500px;
+		background: url('color-banner-bg.png') no-repeat;
+		background-size: cover;
+		background-position: right 0px;
+		overflow: hidden;
+		position: relative;
+	}
+
+	#color-banner-quote{
+		height: 100px;
+		width: 100%;
+		background: url('color-banner-quote.png') no-repeat;
+		background-position: center;
+		position: absolute;
+		top: 5%;
+		margin-top: -80px;
+		opacity: 0;
+	}
+
+	#color-banner-eyes{
+		width: 700px;
+		height: 733px;
+		background: url('color-banner-eyes.png') no-repeat;
+		background-position: left top;
+		top: 50%;
+		margin-top: -320px;
+		position: absolute;
+	}
+
+	#color-banner-bg-reflection{
+		height: 100px;
+		width: 100%;
+		background: url('color-banner-bg-sm.png') no-repeat;
+		background-position: left;
+		position: absolute;
+		top: 23%;
+		margin-top: -50px;
+		left: 18%;
+		opacity: 0.5;
+	}
+
+	#color-banner-bg-reflection-2{
+	height: 100px;
+	width: 100%;
+	background: url('color-banner-bg-sm.png') no-repeat;
+	background-position: left;
+	position: absolute;
+	top: 26%;
+	margin-top: -50px;
+	left: 1%;
+	opacity: 0.5;
+	}
+
+	#color-banner-burst-yellow{
+		width: 100%;
+		height: 733px;
+		background: url('color-banner-burst-yellow.png') no-repeat;
+		background-position: left bottom;
+		position: absolute;
+		opacity: ;
+	}
+
+	#color-banner-burst-green{
+		height: 733px;
+		width: 100%;
+		background: url('color-banner-burst-green.png') no-repeat;
+		background-position: center;
+		position: absolute;
+		top: 50%;
+		margin-top: -50px;
+		opacity: 0;
+	}

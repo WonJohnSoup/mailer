@@ -3,6 +3,10 @@ class ContactsController < ApplicationController
     @contact = Contact.new
   end
 
+  def show
+    render :show
+  end
+
   def create
     @contact = Contact.new(params[:contact])
     @contact.request = request
