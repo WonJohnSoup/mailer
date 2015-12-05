@@ -124,7 +124,8 @@
 }
 
 	.body-icons > p{
-		font-family: 'Lora', serif;
+		font-family: 'Quicksand', sans-serif;
+		font-weight: bold;
 	}
 
 		.body-icons > p.top-orange-border{
