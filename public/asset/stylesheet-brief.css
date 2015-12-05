@@ -1,5 +1,10 @@
 body{
-	height: 1000px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.width-expand{
+	width: 100%;
 }
 
 .navbar-inverse {
@@ -8,13 +13,14 @@ body{
 }
 
 .navbar-inverse-dark {
-	background: -webkit-linear-gradient(#535353, transparent);
+/*	background: -webkit-linear-gradient(#535353, transparent);
     background: -o-linear-gradient(#535353, transparent);
     background: -moz-linear-gradient(#535353, transparent);
-    background: linear-gradient(#535353, transparent);
-    opacity: 0.7;
-    padding-bottom: 10px;
-    transition: all 0.9s ease;
+    background: linear-gradient(#535353, transparent);*/
+    /*opacity: 0.7;*/
+    /*padding-bottom: 10px;*/
+    transition: all 0.15s ease;
+    background-color: #282828;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -31,12 +37,12 @@ body{
 }
 
 #color-banner{
-	margin-top: 150px;
+	margin-top: 50px;
 	position: relative;
 	height: 500px;
 	/*background: url('color-banner-bg.png') no-repeat;*/
 	background-size: cover;
-	background-position: right 0px;
+	/*background-position: right 0px;*/
 	/*background-attachment: fixed;*/
 	overflow: hidden;
 }
@@ -114,3 +120,81 @@ body{
 		margin-top: -50px;
 		opacity: 0;
 	}
+
+
+#brief-holder{
+	position: relative;
+	background: url('stagelights.jpg') no-repeat;
+	background-position: 50% 50%;
+	padding: 60px 0px 60px 0px;
+	margin: 0px;
+}
+
+	#brief-holder .panel{
+		background-color: transparent;
+		color: white;
+	}
+
+	#brief-holder .panel-title{
+		font-family: 'Quicksand', sans-serif;
+		font-size: 300%;
+	}
+
+	#brief-holder .panel-body{
+		font-family: 'Merriweather', serif;
+		font-size: 110%;
+		line-height: 1.8;
+		margin-left: 30px;
+	}
+
+	#left-brain{
+		background: url('technical.jpg') no-repeat;
+		background-position: 50% 50%;
+		margin: 0px;
+		background-size: cover;
+	}
+
+	#right-brain{
+		background: url('artistic.jpg') no-repeat;
+		background-position: 80% 80%;
+		margin: 0px;
+		background-size: cover;
+	}
+
+
+#footer{
+	font-family: 'Josefin Slab', serif;
+	line-height: 3.5;
+	text-align: center;
+	font-size: 80px;
+	color: white;
+	background-color: #1b539d;
+	margin: 0px;
+	width: 100%;
+}
+
+
+
+/*media query*/
+@media (max-width: 650px){
+
+	#brief-holder{
+		padding: 0px;
+		margin-right: -16px;
+	}
+
+	#brief-holder .panel-heading{
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+
+	#left-brain{
+		margin-bottom: 35px;
+	}
+
+	#footer{
+		font-size: 20px;
+	}
+
+
+}
