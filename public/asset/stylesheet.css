@@ -124,7 +124,7 @@
 }
 
 	.body-icons > p{
-		font-family: 'Josefin Slab', serif;
+		/*font-family: 'Josefin Slab', serif;*/
 		font-family: 'Quicksand', sans-serif;
 		font-weight: bold;
 	}
@@ -195,6 +195,7 @@ video#bg-vid{
 
 #portfolio-list-header{
 	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
 	margin-top: 65px;
 	text-align: center;
 }
@@ -249,7 +250,7 @@ video#bg-vid{
 
 .panel-title{
 	font-family: 'Lora', sans-serif;
-	font-size: 225%;
+	font-size: 250%;
 	font-weight: bold;
 }
 
@@ -257,10 +258,23 @@ video#bg-vid{
 	/*font-family: 'Josefin Slab', serif;*/
 	/*font-family: 'Merriweather', serif;*/
 	font-family: 'Lora', sans-serif;
-	/*font-family: 'Quicksand', sans-serif;*/
-	/*font-weight: bold;*/
-	font-size: 125%;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 110%;
+	font-weight: bold;
 	margin: 10px;
+}
+
+.technology-list li{
+	display: inline;
+}
+	
+	.technology-list li{
+	font-size: 80%;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
 }
 
 #touch{
@@ -398,3 +412,17 @@ button.lora{
 	}
 
 }
+
+
+
+
+
+/*	// kid banner
+	// <div id="kid-banner" >
+	// 	<div class="hidden-xs hidden-sm col-md-5"></div>
+	// 	<div class="col-xs-12 cold-sm-12 col-md-7">
+	// 		<h1 class="kid-banner-text">mystory.min</h1>
+	// 		<p class="kid-banner-text">Front end developer; Martial artist; Pharmacist; Wedding photographer; Actor extraordinaire. Click to find out more.</p>
+	// 		<a class="kid-banner-text btn btn-default"href="#">Read my story</a>
+	// 	</div>
+	// </div> */
