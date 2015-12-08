@@ -41,12 +41,16 @@
 
 
 			// scroll-fade in banner quote and collor; fade out banner-inner
-			if(scrollPos > $('#color-banner').offset().top - 300){
-				var opacity = (scrollPos - $('#color-banner').offset().top) / (scrollPos/1.8)
-				$('#color-banner-quote').css({'opacity' : opacity});
-				$('#color-banner-burst-green').css({'opacity' : opacity});
-				$('#color-banner-inner').css({'opacity' : (1 - opacity)});
-			}
+			var opac = $('#color-banner');
+				if (opac.length) {
+				  var opacity = ($('#color-banner').offset().top - 300);
+					if(scrollPos > opacity{
+						var opacity = (scrollPos - $('#color-banner').offset().top) / (scrollPos/1.8)
+						$('#color-banner-quote').css({'opacity' : opacity});
+						$('#color-banner-burst-green').css({'opacity' : opacity});
+						$('#color-banner-inner').css({'opacity' : (1 - opacity)});
+					}
+				}
 
 		    if(scrollPos > $('#color-banner').offset().top - 300){
 				var opacity = (scrollPos - $('#color-banner').offset().top) / (scrollPos/1.8)
