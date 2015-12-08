@@ -11,52 +11,53 @@
 	<link href='https://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="../asset/bootstrap.min.css">
 	<link rel="stylesheet" href="../asset/stylesheet-brief.css" type="text/css">
-
+	<script src="../asset/jquery-1.11.3.min.js"></script>
+	<script src="../asset/bootstrap.js"></script>
 	<script>
-	$(document).ready(function(){
+	// $(document).ready(function(){
 
 
-		$(window).scroll(function(){
+	// 	$(window).scroll(function(){
 
-			var scrollPos = $(this).scrollTop();
+	// 		var scrollPos = $(this).scrollTop();
 			
-			// parallax
-			$('#color-banner-quote').css({
-				'transform' : 'translate(0px, '+ scrollPos /1.1 +'%)'
-			});
+	// 		// parallax
+	// 		$('#color-banner-quote').css({
+	// 			'transform' : 'translate(0px, '+ scrollPos /1.1 +'%)'
+	// 		});
 
-			$('#color-banner-eyes').css({
-				'transform' : 'translate(0px, '+ scrollPos /10 +'%)'
-			});
+	// 		$('#color-banner-eyes').css({
+	// 			'transform' : 'translate(0px, '+ scrollPos /10 +'%)'
+	// 		});
 
-			$('#color-banner-bg-reflection').css({
-				'transform' : 'translate(0px, '+ scrollPos /1.4 +'%)'
-			});
+	// 		$('#color-banner-bg-reflection').css({
+	// 			'transform' : 'translate(0px, '+ scrollPos /1.4 +'%)'
+	// 		});
 
-			$('#color-banner-bg-reflection-2').css({
-				'transform' : 'translate(0px, '+ scrollPos /1.4 +'%)'
-			});
-
-
-
-			// scroll-fade in banner quote and collor; fade out banner-inner
-			if(scrollPos > $('#color-banner').offset().top - 300){
-				var opacity = (scrollPos - $('#color-banner').offset().top) / (scrollPos/1.8)
-				$('#color-banner-quote').css({'opacity' : opacity});
-				$('#color-banner-burst-green').css({'opacity' : opacity});
-				$('#color-banner-inner').css({'opacity' : (1 - opacity)});
-			}
-
-		    if(scrollPos > $('#color-banner').offset().top - 300){
-				var opacity = (scrollPos - $('#color-banner').offset().top) / (scrollPos/1.8)
-				$('.navbar').css({'opacity' : (1 - opacity)})
-			}
-
-		})
+	// 		$('#color-banner-bg-reflection-2').css({
+	// 			'transform' : 'translate(0px, '+ scrollPos /1.4 +'%)'
+	// 		});
 
 
 
-	})
+	// 		// scroll-fade in banner quote and collor; fade out banner-inner
+	// 		if(scrollPos > $('#color-banner').offset().top - 300){
+	// 			var opacity = (scrollPos - $('#color-banner').offset().top) / (scrollPos/1.8)
+	// 			$('#color-banner-quote').css({'opacity' : opacity});
+	// 			$('#color-banner-burst-green').css({'opacity' : opacity});
+	// 			$('#color-banner-inner').css({'opacity' : (1 - opacity)});
+	// 		}
+
+	// 	    if(scrollPos > $('#color-banner').offset().top - 300){
+	// 			var opacity = (scrollPos - $('#color-banner').offset().top) / (scrollPos/1.8)
+	// 			$('.navbar').css({'opacity' : (1 - opacity)})
+	// 		}
+
+	// 	})
+
+
+
+	// })
 
 	</script>
 </head>
@@ -124,4 +125,44 @@
 	<!-- email footer -->
 	<h1 id="footer">wonjohnsoup@gmail.com</h1>
 </body>
+<script>
+			$(window).scroll(function(){
+
+			var scrollPos = $(this).scrollTop();
+			
+			// parallax
+			$('#color-banner-quote').css({
+				'transform' : 'translate(0px, '+ scrollPos /1.1 +'%)'
+			});
+
+			$('#color-banner-eyes').css({
+				'transform' : 'translate(0px, '+ scrollPos /10 +'%)'
+			});
+
+			$('#color-banner-bg-reflection').css({
+				'transform' : 'translate(0px, '+ scrollPos /1.4 +'%)'
+			});
+
+			$('#color-banner-bg-reflection-2').css({
+				'transform' : 'translate(0px, '+ scrollPos /1.4 +'%)'
+			});
+
+
+
+			// scroll-fade in banner quote and collor; fade out banner-inner
+			if(scrollPos > $('#color-banner').offset().top - 300){
+				var opacity = (scrollPos - $('#color-banner').offset().top) / (scrollPos/1.8)
+				$('#color-banner-quote').css({'opacity' : opacity});
+				$('#color-banner-burst-green').css({'opacity' : opacity});
+				$('#color-banner-inner').css({'opacity' : (1 - opacity)});
+			}
+
+		    if(scrollPos > $('#color-banner').offset().top - 300){
+				var opacity = (scrollPos - $('#color-banner').offset().top) / (scrollPos/1.8)
+				$('.navbar').css({'opacity' : (1 - opacity)})
+			}
+
+		})
+	
+</script>
 </html>
