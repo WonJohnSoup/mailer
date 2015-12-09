@@ -36,6 +36,10 @@ body{
     font-family: 'Josefin Slab', serif;
 }
 
+#navBrand{
+	margin-top: -5px;
+}
+
 #color-banner{
 	margin-top: 50px;
 	position: relative;
